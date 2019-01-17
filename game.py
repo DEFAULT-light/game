@@ -1,0 +1,42 @@
+import random
+import time
+
+print('-=-'* 25)
+
+print("""
+      ____    _    __  __ _____ 
+     / ___|  / \  |  \/  | ____|
+    | |  _  / _ \ | |\/| |  _|  
+    | |_| |/ ___ \| |  | | |___ 
+     \____/_/   \_\_|  |_|_____| by@default https://github.com/DEFAULT-light/game
+""")
+
+print('-=-'* 25)
+pc=random.randint(1, 5)
+print('Vou pensar em um numero de 1 a 5')
+player=(int(input('Tente adivinhar... :')))
+print('Processando')
+time.sleep(2)
+if player == pc:
+    print('-=-' * 25)
+    print("""    
+    __   __           __        __          
+    \ \ / /__  _   _  \ \      / /__  _ __  
+     \ V / _ \| | | |  \ \ /\ / / _ \| '_ \ 
+      | | (_) | |_| |   \ V  V / (_) | | | |
+      |_|\___/ \__,_|    \_/\_/ \___/|_| |_| by@default https://github.com/DEFAULT-light/game
+    
+    Parabens voce me venceu :( eu escolhi o número {}""".format(pc))
+    print('-=-' * 25)
+else:
+    print('-=-' * 25)
+    print("""
+      ____                         ___                     
+     / ___| __ _ _ __ ___   ___   / _ \__   _____ _ __ 
+    | |  _ / _` | '_ ` _ \ / _ \ | | | \ \ / / _ \ '__|
+    | |_| | (_| | | | | | |  __/ | |_| |\ V /  __/ |   
+     \____|\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|    by@default https://github.com/DEFAULT-light/game
+    
+    HaHa eu ganhei :) escolhi o número {} e nao {}
+    """.format(pc,player))
+    print('-=-' * 25)
